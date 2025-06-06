@@ -19,11 +19,11 @@ const { payments } = new SquareClient({
 });
 
 const privateKey = fs.readFileSync(
-    "/etc/letsencrypt/live/tu-dominio.com/privkey.pem",
+    "/etc/letsencrypt/live/luxurytoysrepair.tech/privkey.pem",
     "utf8"
 );
 const certificate = fs.readFileSync(
-    "/etc/letsencrypt/live/tu-dominio.com/fullchain.pem",
+    "/etc/letsencrypt/live/luxurytoysrepair.tech/fullchain.pem",
     "utf8"
 );
 const credentials = { key: privateKey, cert: certificate };
