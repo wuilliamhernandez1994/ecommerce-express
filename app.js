@@ -12,8 +12,8 @@ app.use(express.json());
 app.use(cors());
 
 const { payments } = new SquareClient({
-    token: process.env.SQUARE_ACCESS_TOKEN_SANDBOX,
-    environment: SquareEnvironment.Sandbox,
+    token: process.env.SQUARE_ACCESS_TOKEN_PRODUCTION,
+    environment: SquareEnvironment.Production,
 });
 
 app.get("/", (req, res) => {
